@@ -5,4 +5,4 @@ from . import models
 
 class TeamViewSet(viewsets.ReadOnlyModelViewSet):
     serializer_class = serializers.TeamSerializer
-    queryset = models.Team.objects.all().order_by('score')
+    queryset = models.Team.objects.all().order_by('-score')

@@ -3,11 +3,11 @@ from django.db import models
 
 class Team(models.Model):
     TEAMS = (
-        ('FEKETE','Fekete'),
-        ('SARGA','Sárga'),
-        ('PIROS','Piros'),
-        ('KEK','Kék'),
-        ('FEHER','Fehér'),
+        ('Fekete','Fekete'),
+        ('Sárga','Sárga'),
+        ('Piros','Piros'),
+        ('Kék','Kék'),
+        ('Fehér','Fehér'),
     )
     name = models.CharField(max_length=100)
     team_id = models.CharField(max_length=8)
